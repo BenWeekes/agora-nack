@@ -33,5 +33,4 @@ let avgnack= AgoraRTCNack.getRemoteAvgNack();
 #### Demo
 https://sa-utils.agora.io/agora-nack/index.html
 
-#### Demo Video
-https://sa-utils.agora.io/agora-nack/index.html
+
