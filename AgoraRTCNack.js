@@ -38,7 +38,7 @@ var AgoraRTCNack = (function () {
 
             for (var i = 0; i < _rtc_num_clients; i++) {
                 var client = _rtc_clients[i];
-                if (client._p2pChannel.connection) {
+                if (client && client._p2pChannel && client._p2pChannel.connection) {
                     for (var u = 0; u < client._users.length; u++) {
                         var uid = client._users[u].uid;
                         if (client._p2pChannel.connection.peerConnection && client.getRemoteVideoStats()[uid] && client._users[u].videoTrack && client._users[u].videoTrack._mediaStreamTrack) {
